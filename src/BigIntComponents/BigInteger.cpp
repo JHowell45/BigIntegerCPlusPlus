@@ -70,9 +70,14 @@ void BigInteger :: add(BigInteger firstVal, BigInteger secondVal) {
     tempSecondArray[secondValueIndex] = secondValPointer[secondValueIndex];
   }
 
-  for(int counter = largestArray-1; counter >= 0; counter--) {
-    if(counter <= differenceInSize) {
-
+  for(unsigned long counter = largestArray-1; counter == 0; counter--) {
+    unsigned long largeIndex = counter;
+    unsigned long smallIndex = counter - differenceInSize;
+    if(counter > differenceInSize) {
+      cout << "Add values at index" << endl;
+    } else {
+      cout << "Just put the value in the largest index" << endl;
     }
   }
+  cout << endl;
 }
