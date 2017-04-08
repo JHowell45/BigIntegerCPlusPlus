@@ -6,7 +6,8 @@ add_definitions(-g2)
 include_directories("${PROJECT_SOURCE_DIR}/include/")
 
 add_library(BigIntegerLibrary ${PROJECT_SOURCE_DIR}/src/BigIntComponents/BigInteger.cpp
-                              ${PROJECT_SOURCE_DIR}/src/BigIntComponents/LongAddition.cpp)
+                              ${PROJECT_SOURCE_DIR}/src/BigIntComponents/LongAddition.cpp
+                            ${PROJECT_SOURCE_DIR}/src/BigIntComponents/BigIntUtils.cpp)
 
 add_executable(test1 ${PROJECT_SOURCE_DIR}/src/TestBigInt/test.cpp)
 

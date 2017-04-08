@@ -1,7 +1,7 @@
 #ifndef LONGADDITION_H
 #define LONGADDITION_H
 
-struct AddOneResult {
+struct AddResult {
   int result;
   int carryValue;
 };
@@ -9,8 +9,7 @@ struct AddOneResult {
 class LongAddition {
 
   public :
-  bool checkAddOneToNextValue(int firstVal, int secondVal);
-  AddOneResult addIndexValue(int firstVal, int secondVal);
+  AddResult addIndexValue(int firstVal, int secondVal, int carryOverValue);
 };
 
 #endif
