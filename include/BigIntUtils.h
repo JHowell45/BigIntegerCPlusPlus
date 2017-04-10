@@ -22,6 +22,7 @@ class BigIntUtils {
   public :
   LargestArrayResult getLargestArray(BigInteger firstVal, BigInteger secondVal);
   int* addTwoValues(int* firstNum, int* secondNum, LargestArrayResult result);
+  int* subTwoValues(int* firstNum, int* secondNum, LargestArrayResult result);
 };
 
 #endif

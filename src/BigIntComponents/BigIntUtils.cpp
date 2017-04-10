@@ -54,3 +54,13 @@ int* BigIntUtils :: addTwoValues(int* firstNum, int* secondNum, LargestArrayResu
   }
   return resultArray;
 }
+
+int* subTwoValues(int* firstNum, int* secondNum, LargestArrayResult result) {
+  unsigned long largestArray = result.big;
+  unsigned long differenceInSize = result.diff;
+  unsigned long largeIndex;
+  unsigned long smallIndex;
+  int* resultArray = new int[largestArray];
+  int currentVal;
+  AddResult addResult = {0,0};
+}
