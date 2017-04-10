@@ -43,6 +43,19 @@ void BigInteger :: setValue(string intValue) {
 
 // -------------------------------------------------------------------------------------------------
 
+void BigInteger :: setValue(long long int bigIntValue) {
+  long long int temp = bigIntValue;
+  string stringTemp = to_string(temp);
+  arrayLength = stringTemp.length();
+  bigIntArray = new int[arrayLength];
+  for(int stringIndex = 0; stringIndex < stringTemp.length(); stringIndex++) {
+    bigIntArray[stringIndex] = (int)stringTemp[stringIndex] - 48;
+    //cout << stringIndex << ": " << bigIntArray[stringIndex] << endl;
+  }
+}
+
+// -------------------------------------------------------------------------------------------------
+
 unsigned long BigInteger :: getLength() {
   return arrayLength;
 }
@@ -75,3 +88,12 @@ void BigInteger :: add(BigInteger firstVal, BigInteger secondVal) {
 }
 
 // -------------------------------------------------------------------------------------------------
+
+void BigInteger :: subtract(BigInteger firstVal, BigInteger secondVal) {
+  int* firstArray = firstVal.getValue();
+  int* secondArray = secondVal.getValue();
+
+  LargestArrayResult result = utilFuncts.getLargestArray(firstVal,secondVal);
+  arrayLength = result.big;
+  bigIntArray = new int[arrayLength];
+}

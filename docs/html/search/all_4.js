@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['printvalue',['printValue',['../class_big_integer.html#a97b276cd2141c659e76843e93ce85429',1,'BigInteger']]]
+  ['largestarrayresult',['LargestArrayResult',['../struct_largest_array_result.html',1,'']]],
+  ['longaddition',['LongAddition',['../class_long_addition.html',1,'']]]
 ];

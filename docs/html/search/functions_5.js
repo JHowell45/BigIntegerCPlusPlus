@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7ebiginteger',['~BigInteger',['../class_big_integer.html#a987e3a4e9c4405404719be08caaa3146',1,'BigInteger']]]
+  ['printvalue',['printValue',['../class_big_integer.html#a97b276cd2141c659e76843e93ce85429',1,'BigInteger']]]
 ];

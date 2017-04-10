@@ -33,8 +33,8 @@ class BigInteger {
 
   /**
    * Sets the value of the BigInteger variable.
-   * @param intValue is the String representation of the number the user wants added to the
-   * variable.
+   * @param intValue is the String representation of the number the user wants to be
+   * stored in the BigInteger variable.
    * @see BigInteger()
    * @see ~BigInteger()
    * @see getValue()
@@ -48,17 +48,39 @@ class BigInteger {
    *
    * Example of use:
    * @code
-   *    BigInteger test.setValue("143654543242"); // Assigns the number 143654543242 to the variable test
+   *    BigInteger test.setValue("143654543242"); // Assigns the string 143654543242 to the variable test
    * @endcode
    */
   void setValue(string intValue);
+
+  /**
+   * Sets the value of the BigInteger variable.
+   * @param  bigIntValue is the long long int representation of the number the user wants to be
+   * stored in the BigInteger variable.
+   * @see BigInteger()
+   * @see ~BigInteger()
+   * @see setValue(long long int bigIntValue)
+   * @see getValue()
+   * @see printValue()
+   *
+   *
+   * Similar to the method setValue(string intValue) this allows for the use of the method with a
+   * long long int argument. This is a form of method overloading allowing for both methods to be
+   * viable and also providing the use of the function with an argument of differing types.
+   *
+   * Example of use:
+   * @code
+   *    BigInteger test.setValue(54234243); // Assigns the number 54234243 to the variable test
+   * @endcode
+   */
+  void setValue(long long int bigIntValue);
 
   /**
    * Retrieves the length of the number held by the variable.
    * @return The length of the number.
    * @see BigInteger()
    * @see ~BigInteger()
-   * @see setValue()
+   * @see setValue(string intValue)
    *
    *
    * This method is used for retrieving the length of the number in the BigInteger variable. This
@@ -106,6 +128,7 @@ class BigInteger {
    * @see BigInteger()
    * @see ~BigInteger()
    * @see setValue(string intValue)
+   * @see setValue(long long int bigIntValue)
    *
    *
    * The result is then assigned to the BigInteger value it is appended to. It adds the two values
@@ -126,13 +149,71 @@ class BigInteger {
 
   /**
    * This method is used to subtract one BigInteger value from another.
-   * @param  firstVal  [description]
-   * @param  secondVal [description]
-   * @return           [description]
+   * @param  firstVal  is the number to have a value subtracted from.
+   * @param  secondVal is the number to subtract.
+   * @return the result of subtracting secondVal from firstVal.
+   * @see @see BigInteger()
+   * @see ~BigInteger()
+   * @see setValue(string intValue)
+   * @see setValue(long long int bigIntValue)
+   *
+   * This method is used for subtracting one value from another. It takes a similar approach to add
+   * using a form of long subtraction. It odes the calculations one digit at a time and carries
+   * over any number that exeeds two digits.
+   *
+   * Example of use:
+   * @code
+   *    BigInteger firstNumber.setValue("100"); // Assign the number 100 to the variable firstNumber.
+   *    BigInteger secondNumber.setValue("20"); // Assign the number 20 to the variable secondNumber.
+   *
+   *    BigInteger result.subtract(firstNumber,secondNumber); // Assigns the result of subtracting secondNumber from firstNumber, giving the result 80, to the variable result.
+   * @endcode
    */
-  BigInteger subtract(BigInteger firstVal, BigInteger secondVal);
-  BigInteger multiply(BigInteger firstVal, BigInteger secondVal);
-  BigInteger divide(BigInteger firstVal, BigInteger secondVal);
+  void subtract(BigInteger firstVal, BigInteger secondVal);
+
+  /**
+   * This method is used to multiply two BigInteger values together.
+   * @param  firstVal  is the first value to multiply.
+   * @param  secondVal is the second value to multiply.
+   * @see @see BigInteger()
+   * @see ~BigInteger()
+   * @see setValue(string intValue)
+   * @see setValue(long long int bigIntValue)
+   *
+   *
+   * This method is used to multiply two BigInteger numbers together.
+   *
+   * Example of use:
+   * @code
+   *    BigInteger firstNumber.setValue(20); // Assign the number 20 to the variable firstNumber.
+   *    BigInteger secondNumber.setValue(55); // Assign the number 55 to the variable secondNumber.
+   *
+   *    BigInteger result.multiply(firstNumber,secondNumber); // Assigns the result of multiplying the firstNumber and the secondNumber.
+   * @endcode
+   */
+  void multiply(BigInteger firstVal, BigInteger secondVal);
+
+  /**
+   * This method is used to divide two BigInteger values together.
+   * @param  firstVal  is the first value to multiply.
+   * @param  secondVal is the second value to multiply.
+   * @see @see BigInteger()
+   * @see ~BigInteger()
+   * @see setValue(string intValue)
+   * @see setValue(long long int bigIntValue)
+   *
+   *
+   * This method is used to divide the first BigInteger number by the second BigInteger number.
+   *
+   * Example of use:
+   * @code
+   *    BigInteger firstNumber.setValue(30); // Assign the number 30 to the variable firstNumber.
+   *    BigInteger secondNumber.setValue(6); // Assign the number 6 to the variable secondNumber.
+   *
+   *    BigInteger result.divide(firstNumber,secondNumber); // Assigns the result of dividing the firstNumber by the secondNumber.
+   * @endcode
+   */
+  void divide(BigInteger firstVal, BigInteger secondVal);
 };
 
 #endif

@@ -9,6 +9,8 @@
 \begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
 void \textbf{ set\+Value} (string int\+Value)
 \begin{DoxyCompactList}\small\item\em Sets the value of the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. \end{DoxyCompactList}\item 
+void \textbf{ set\+Value} (long long int big\+Int\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the value of the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. \end{DoxyCompactList}\item 
 unsigned long \textbf{ get\+Length} ()
 \begin{DoxyCompactList}\small\item\em Retrieves the length of the number held by the variable. \end{DoxyCompactList}\item 
 int $\ast$ \textbf{ get\+Value} ()
@@ -17,14 +19,12 @@ void \textbf{ print\+Value} ()
 \begin{DoxyCompactList}\small\item\em This method is used for printing thr value of the \doxyref{Big\+Integer}{p.}{class_big_integer} value. \end{DoxyCompactList}\item 
 void \textbf{ add} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
 \begin{DoxyCompactList}\small\item\em This method is used to add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. \end{DoxyCompactList}\item 
-\textbf{ Big\+Integer} \textbf{ subtract} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
+void \textbf{ subtract} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
 \begin{DoxyCompactList}\small\item\em This method is used to subtract one \doxyref{Big\+Integer}{p.}{class_big_integer} value from another. \end{DoxyCompactList}\item 
-\mbox{\label{class_big_integer_a2e99c5a21088f4a0d92ff8180dc1e701}} 
-\textbf{ Big\+Integer} {\bfseries multiply} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
-\item 
-\mbox{\label{class_big_integer_afad44b4bb4b9ae80c33a4be04c00a118}} 
-\textbf{ Big\+Integer} {\bfseries divide} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
-\end{DoxyCompactItemize}
+void \textbf{ multiply} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
+\begin{DoxyCompactList}\small\item\em This method is used to multiply two \doxyref{Big\+Integer}{p.}{class_big_integer} values together. \end{DoxyCompactList}\item 
+void \textbf{ divide} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
+\begin{DoxyCompactList}\small\item\em This method is used to divide two \doxyref{Big\+Integer}{p.}{class_big_integer} values together. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -73,7 +73,9 @@ This method is used to add two \doxyref{Big\+Integer}{p.}{class_big_integer} val
 
 \doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
 
-\doxyref{set\+Value(string int\+Value)}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133}
+\doxyref{set\+Value(string int\+Value)}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133} 
+
+\doxyref{set\+Value(long long int big\+Int\+Value)}{p.}{class_big_integer_a8dbfc69090df350ac479814694f46ca8}
 \end{DoxySeeAlso}
 The result is then assigned to the \doxyref{Big\+Integer}{p.}{class_big_integer} value it is appended to. It adds the two values using a form of long division adding individual digits one at a time, starting from the end of both arrays, and carrying over a 1 if the result exceeds 10. It then stores this in a new array to be stored in a \doxyref{Big\+Integer}{p.}{class_big_integer} variable.
 
@@ -84,6 +86,44 @@ BigInteger secondValue.setValue(\textcolor{stringliteral}{"15"}); \textcolor{com
 
 BigInteger result.add(firstVal,secondValue); \textcolor{comment}{// Add both values and append the answer, 35, the BigInteger
        result.}
+\end{DoxyCode}
+ \mbox{\label{class_big_integer_afb86ffe260608c44af94e430a2ee4b82}} 
+\index{Big\+Integer@{Big\+Integer}!divide@{divide}}
+\index{divide@{divide}!Big\+Integer@{Big\+Integer}}
+\subsubsection{divide()}
+{\footnotesize\ttfamily void Big\+Integer\+::divide (\begin{DoxyParamCaption}\item[{\textbf{ Big\+Integer}}]{first\+Val,  }\item[{\textbf{ Big\+Integer}}]{second\+Val }\end{DoxyParamCaption})}
+
+
+
+This method is used to divide two \doxyref{Big\+Integer}{p.}{class_big_integer} values together. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Val} & is the first value to multiply. \\
+\hline
+{\em second\+Val} & is the second value to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+
+
+\doxyref{Big\+Integer()}{p.}{class_big_integer_a67a108dbe651911a21b3fc4310a505dd} 
+
+\doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
+
+\doxyref{set\+Value(string int\+Value)}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133} 
+
+\doxyref{set\+Value(long long int big\+Int\+Value)}{p.}{class_big_integer_a8dbfc69090df350ac479814694f46ca8}
+\end{DoxySeeAlso}
+This method is used to divide the first \doxyref{Big\+Integer}{p.}{class_big_integer} number by the second \doxyref{Big\+Integer}{p.}{class_big_integer} number.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger firstNumber.setValue(30); \textcolor{comment}{// Assign the number 30 to the variable firstNumber.}
+BigInteger secondNumber.setValue(6); \textcolor{comment}{// Assign the number 6 to the variable secondNumber.}
+
+BigInteger result.divide(firstNumber,secondNumber); \textcolor{comment}{// Assigns the result of dividing the firstNumber by
+       the secondNumber.}
 \end{DoxyCode}
  \mbox{\label{class_big_integer_ab1f0e41f6cba177600f6965f4a0b5329}} 
 \index{Big\+Integer@{Big\+Integer}!get\+Length@{get\+Length}}
@@ -103,7 +143,7 @@ The length of the number.
 
 \doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
 
-\doxyref{set\+Value()}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133}
+\doxyref{set\+Value(string int\+Value)}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133}
 \end{DoxySeeAlso}
 This method is used for retrieving the length of the number in the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. This method is mainly used by other methods, however, was kept public so the user can use and access it.
 
@@ -131,6 +171,44 @@ Example of use\+:
 BigInteger test.getValue(); \textcolor{comment}{// Returns a pointer to the start of the array holding the value of the
        BigInteger variable test.}
 \end{DoxyCode}
+ \mbox{\label{class_big_integer_a29ed82a225776f7b2237789fbd7c1cf9}} 
+\index{Big\+Integer@{Big\+Integer}!multiply@{multiply}}
+\index{multiply@{multiply}!Big\+Integer@{Big\+Integer}}
+\subsubsection{multiply()}
+{\footnotesize\ttfamily void Big\+Integer\+::multiply (\begin{DoxyParamCaption}\item[{\textbf{ Big\+Integer}}]{first\+Val,  }\item[{\textbf{ Big\+Integer}}]{second\+Val }\end{DoxyParamCaption})}
+
+
+
+This method is used to multiply two \doxyref{Big\+Integer}{p.}{class_big_integer} values together. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Val} & is the first value to multiply. \\
+\hline
+{\em second\+Val} & is the second value to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+
+
+\doxyref{Big\+Integer()}{p.}{class_big_integer_a67a108dbe651911a21b3fc4310a505dd} 
+
+\doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
+
+\doxyref{set\+Value(string int\+Value)}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133} 
+
+\doxyref{set\+Value(long long int big\+Int\+Value)}{p.}{class_big_integer_a8dbfc69090df350ac479814694f46ca8}
+\end{DoxySeeAlso}
+This method is used to multiply two \doxyref{Big\+Integer}{p.}{class_big_integer} numbers together.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger firstNumber.setValue(20); \textcolor{comment}{// Assign the number 20 to the variable firstNumber.}
+BigInteger secondNumber.setValue(55); \textcolor{comment}{// Assign the number 55 to the variable secondNumber.}
+
+BigInteger result.multiply(firstNumber,secondNumber); \textcolor{comment}{// Assigns the result of multiplying the firstNumber
+       and the secondNumber.}
+\end{DoxyCode}
  \mbox{\label{class_big_integer_a97b276cd2141c659e76843e93ce85429}} 
 \index{Big\+Integer@{Big\+Integer}!print\+Value@{print\+Value}}
 \index{print\+Value@{print\+Value}!Big\+Integer@{Big\+Integer}}
@@ -150,7 +228,7 @@ BigInteger test.printValue(); \textcolor{comment}{// Prints the value of test co
  \mbox{\label{class_big_integer_aaf261f212247b3206108902c039a8133}} 
 \index{Big\+Integer@{Big\+Integer}!set\+Value@{set\+Value}}
 \index{set\+Value@{set\+Value}!Big\+Integer@{Big\+Integer}}
-\subsubsection{set\+Value()}
+\subsubsection{set\+Value()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Big\+Integer\+::set\+Value (\begin{DoxyParamCaption}\item[{string}]{int\+Value }\end{DoxyParamCaption})}
 
 
@@ -159,7 +237,7 @@ Sets the value of the \doxyref{Big\+Integer}{p.}{class_big_integer} variable.
 
 
 \begin{DoxyParams}{Parameters}
-{\em int\+Value} & is the String representation of the number the user wants added to the variable. \\
+{\em int\+Value} & is the String representation of the number the user wants to be stored in the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. \\
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See also}
@@ -175,13 +253,45 @@ This sets the current \doxyref{Big\+Integer}{p.}{class_big_integer} variable to 
 
 Example of use\+: 
 \begin{DoxyCode}
-BigInteger test.setValue(\textcolor{stringliteral}{"143654543242"}); \textcolor{comment}{// Assigns the number 143654543242 to the variable test}
+BigInteger test.setValue(\textcolor{stringliteral}{"143654543242"}); \textcolor{comment}{// Assigns the string 143654543242 to the variable test}
 \end{DoxyCode}
- \mbox{\label{class_big_integer_a4f4091a0760e9ec3b05de77769b6fda1}} 
+ \mbox{\label{class_big_integer_a8dbfc69090df350ac479814694f46ca8}} 
+\index{Big\+Integer@{Big\+Integer}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!Big\+Integer@{Big\+Integer}}
+\subsubsection{set\+Value()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Big\+Integer\+::set\+Value (\begin{DoxyParamCaption}\item[{long long int}]{big\+Int\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em big\+Int\+Value} & is the long long int representation of the number the user wants to be stored in the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\doxyref{Big\+Integer()}{p.}{class_big_integer_a67a108dbe651911a21b3fc4310a505dd} 
+
+\doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
+
+\doxyref{set\+Value(long long int big\+Int\+Value)}{p.}{class_big_integer_a8dbfc69090df350ac479814694f46ca8} 
+
+\doxyref{get\+Value()}{p.}{class_big_integer_adcf3fa048a5fe4c9828475e1eace1031} 
+
+\doxyref{print\+Value()}{p.}{class_big_integer_a97b276cd2141c659e76843e93ce85429}
+\end{DoxySeeAlso}
+Similar to the method \doxyref{set\+Value(string int\+Value)}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133} this allows for the use of the method with a long long int argument. This is a form of method overloading allowing for both methods to be viable and also providing the use of the function with an argument of differing types.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger test.setValue(54234243); \textcolor{comment}{// Assigns the number 54234243 to the variable test}
+\end{DoxyCode}
+ \mbox{\label{class_big_integer_a7725b32ee3492ffd2c263ae53c2c9126}} 
 \index{Big\+Integer@{Big\+Integer}!subtract@{subtract}}
 \index{subtract@{subtract}!Big\+Integer@{Big\+Integer}}
 \subsubsection{subtract()}
-{\footnotesize\ttfamily \textbf{ Big\+Integer} Big\+Integer\+::subtract (\begin{DoxyParamCaption}\item[{\textbf{ Big\+Integer}}]{first\+Val,  }\item[{\textbf{ Big\+Integer}}]{second\+Val }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Big\+Integer\+::subtract (\begin{DoxyParamCaption}\item[{\textbf{ Big\+Integer}}]{first\+Val,  }\item[{\textbf{ Big\+Integer}}]{second\+Val }\end{DoxyParamCaption})}
 
 
 
@@ -189,15 +299,36 @@ This method is used to subtract one \doxyref{Big\+Integer}{p.}{class_big_integer
 
 
 \begin{DoxyParams}{Parameters}
-{\em first\+Val} & [description] \\
+{\em first\+Val} & is the number to have a value subtracted from. \\
 \hline
-{\em second\+Val} & [description] \\
+{\em second\+Val} & is the number to subtract. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-[description] 
+the result of subtracting second\+Val from first\+Val. 
 \end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
 
+
+\doxyref{Big\+Integer()}{p.}{class_big_integer_a67a108dbe651911a21b3fc4310a505dd} 
+
+\doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
+
+\doxyref{set\+Value(string int\+Value)}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133} 
+
+\doxyref{set\+Value(long long int big\+Int\+Value)}{p.}{class_big_integer_a8dbfc69090df350ac479814694f46ca8}
+\end{DoxySeeAlso}
+This method is used for subtracting one value from another. It takes a similar approach to add using a form of long subtraction. It odes the calculations one digit at a time and carries over any number that exeeds two digits.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger firstNumber.setValue(\textcolor{stringliteral}{"100"}); \textcolor{comment}{// Assign the number 100 to the variable firstNumber.}
+BigInteger secondNumber.setValue(\textcolor{stringliteral}{"20"}); \textcolor{comment}{// Assign the number 20 to the variable secondNumber.}
+
+BigInteger result.subtract(firstNumber,secondNumber); \textcolor{comment}{// Assigns the result of subtracting secondNumber
+       from firstNumber, giving the result 80, to the variable result.}
+\end{DoxyCode}
+ 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
