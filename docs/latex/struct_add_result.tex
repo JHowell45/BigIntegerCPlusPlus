@@ -1,14 +1,50 @@
 \section{Add\+Result Struct Reference}
 \label{struct_add_result}\index{Add\+Result@{Add\+Result}}
+
+
+This class holds all of the methods for executing the long addition.  
+
+
+
+
+{\ttfamily \#include $<$Long\+Addition.\+h$>$}
+
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\label{struct_add_result_ae66aa315e5c177a4d85abe034b59cc58}} 
-int {\bfseries result}
-\item 
+int \textbf{ result}
+\begin{DoxyCompactList}\small\item\em This value holds the single digit result from adding the two values. \end{DoxyCompactList}\item 
+int \textbf{ carry\+Value}
+\begin{DoxyCompactList}\small\item\em This value holds the remainder if applicable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class holds all of the methods for executing the long addition. 
+
+\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{namespacestd_DESCRIPTION}
+This class contains all of the methods neededfor checking and adding two integer values together. This class takes two integers provided by another class and runs a form of long division. This means that if the value ends up being two digits or increasing by greater than the value of 10, it adds 1 to the remainder value A struct. This struct is used for storing the result returned by adding the first and second value and also the remainder. 
+
+\subsection{Member Data Documentation}
 \mbox{\label{struct_add_result_a06d99d9daaebd0528d158e86441fd189}} 
-int {\bfseries carry\+Value}
-\end{DoxyCompactItemize}
+\index{Add\+Result@{Add\+Result}!carry\+Value@{carry\+Value}}
+\index{carry\+Value@{carry\+Value}!Add\+Result@{Add\+Result}}
+\subsubsection{carry\+Value}
+{\footnotesize\ttfamily int Add\+Result\+::carry\+Value}
+
+
+
+This value holds the remainder if applicable. 
+
+\mbox{\label{struct_add_result_ae66aa315e5c177a4d85abe034b59cc58}} 
+\index{Add\+Result@{Add\+Result}!result@{result}}
+\index{result@{result}!Add\+Result@{Add\+Result}}
+\subsubsection{result}
+{\footnotesize\ttfamily int Add\+Result\+::result}
+
+
+
+This value holds the single digit result from adding the two values. 
+
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

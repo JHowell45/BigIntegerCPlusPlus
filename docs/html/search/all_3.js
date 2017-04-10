@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['getlength',['getLength',['../class_big_integer.html#ab1f0e41f6cba177600f6965f4a0b5329',1,'BigInteger']]],
-  ['getvalue',['getValue',['../class_big_integer.html#adcf3fa048a5fe4c9828475e1eace1031',1,'BigInteger']]]
+  ['diff',['diff',['../struct_largest_array_result.html#af0928baf9a8f1ad6b2a3f4ed8202d7bc',1,'LargestArrayResult']]],
+  ['divide',['divide',['../class_big_integer.html#afb86ffe260608c44af94e430a2ee4b82',1,'BigInteger']]]
 ];

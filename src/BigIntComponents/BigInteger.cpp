@@ -1,16 +1,3 @@
-/**
- * @file    BigInteger.h
- * @author  Jacob Howell
- * @date    06/04/2017
- * @version 1.0
- *
- * @brief This project is designed to add a larger integer type to C++
- *
- * @section DESCRIPTION
- * This program adds a new Integer type for c++ programs. It allows for the use of a much larger
- * Integer value and manipulate it.
- */
-
 #include <iostream>
 #include "BigInteger.h"
 #include "LongAddition.h"

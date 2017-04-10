@@ -1,7 +1,5 @@
 /**
- * @version 1.0
- *
- * @brief This project is designed to add a larger integer type to C++
+ * This project is designed to add a larger integer type to C++
  *
  * @section DESCRIPTION
  * This program adds a new Integer type for c++ programs. It allows for the use of a much larger
@@ -15,8 +13,8 @@
 using namespace std;
 
 class BigInteger {
-  unsigned long arrayLength;
-  int* bigIntArray;
+  unsigned long arrayLength; /**< This variable is used for storing the length of the array. */
+  int* bigIntArray; /**< This variable is used for storing the number. */
 
   public :
   /**

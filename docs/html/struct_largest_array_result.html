@@ -66,22 +66,97 @@ $(function() {
 <div class="title">LargestArrayResult Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class holds all of the utility methods used by the <a class="el" href="class_big_integer.html">BigInteger</a> file.  
+ <a href="struct_largest_array_result.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_big_int_utils_8h_source.html">BigIntUtils.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a52ebc79f13532cb9db38b8dbf650f0f6"><td class="memItemLeft" align="right" valign="top"><a id="a52ebc79f13532cb9db38b8dbf650f0f6"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>big</b></td></tr>
+<tr class="memitem:a52ebc79f13532cb9db38b8dbf650f0f6"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_largest_array_result.html#a52ebc79f13532cb9db38b8dbf650f0f6">big</a></td></tr>
+<tr class="memdesc:a52ebc79f13532cb9db38b8dbf650f0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the largest array.  <a href="#a52ebc79f13532cb9db38b8dbf650f0f6">More...</a><br /></td></tr>
 <tr class="separator:a52ebc79f13532cb9db38b8dbf650f0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaa178b29e92fda897893f9dacdb63b8"><td class="memItemLeft" align="right" valign="top"><a id="aeaa178b29e92fda897893f9dacdb63b8"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>small</b></td></tr>
+<tr class="memitem:aeaa178b29e92fda897893f9dacdb63b8"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_largest_array_result.html#aeaa178b29e92fda897893f9dacdb63b8">small</a></td></tr>
+<tr class="memdesc:aeaa178b29e92fda897893f9dacdb63b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the smallest array.  <a href="#aeaa178b29e92fda897893f9dacdb63b8">More...</a><br /></td></tr>
 <tr class="separator:aeaa178b29e92fda897893f9dacdb63b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0928baf9a8f1ad6b2a3f4ed8202d7bc"><td class="memItemLeft" align="right" valign="top"><a id="af0928baf9a8f1ad6b2a3f4ed8202d7bc"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>diff</b></td></tr>
+<tr class="memitem:af0928baf9a8f1ad6b2a3f4ed8202d7bc"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_largest_array_result.html#af0928baf9a8f1ad6b2a3f4ed8202d7bc">diff</a></td></tr>
+<tr class="memdesc:af0928baf9a8f1ad6b2a3f4ed8202d7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length of the difference between the sizes of the two arrays.  <a href="#af0928baf9a8f1ad6b2a3f4ed8202d7bc">More...</a><br /></td></tr>
 <tr class="separator:af0928baf9a8f1ad6b2a3f4ed8202d7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2cb9c7bbd469c3c7f3c445b7918900"><td class="memItemLeft" align="right" valign="top"><a id="a3d2cb9c7bbd469c3c7f3c445b7918900"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFirstValBigger</b></td></tr>
+<tr class="memitem:a3d2cb9c7bbd469c3c7f3c445b7918900"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_largest_array_result.html#a3d2cb9c7bbd469c3c7f3c445b7918900">isFirstValBigger</a></td></tr>
+<tr class="memdesc:a3d2cb9c7bbd469c3c7f3c445b7918900"><td class="mdescLeft">&#160;</td><td class="mdescRight">The boolean value for saying which of the two arrays is largest.  <a href="#a3d2cb9c7bbd469c3c7f3c445b7918900">More...</a><br /></td></tr>
 <tr class="separator:a3d2cb9c7bbd469c3c7f3c445b7918900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class holds all of the utility methods used by the <a class="el" href="class_big_integer.html">BigInteger</a> file. </p>
+<h1><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h1>
+<p>This file contains all of the utility methods for use by <a class="el" href="class_big_integer.html">BigInteger</a>. This helps to spread out the program and prevent all of the code sitting in one file bulking it and making it harder to edit or debug. A struct. This is used for storing the vlaues of which array is the longest and the difference between two arrays. It also has a boolean value for saying which of the two arrays is longer. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a52ebc79f13532cb9db38b8dbf650f0f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ebc79f13532cb9db38b8dbf650f0f6">&#9670;&nbsp;</a></span>big</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long LargestArrayResult::big</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The length of the largest array. </p>
+
+</div>
+</div>
+<a id="af0928baf9a8f1ad6b2a3f4ed8202d7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0928baf9a8f1ad6b2a3f4ed8202d7bc">&#9670;&nbsp;</a></span>diff</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long LargestArrayResult::diff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The length of the difference between the sizes of the two arrays. </p>
+
+</div>
+</div>
+<a id="a3d2cb9c7bbd469c3c7f3c445b7918900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2cb9c7bbd469c3c7f3c445b7918900">&#9670;&nbsp;</a></span>isFirstValBigger</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LargestArrayResult::isFirstValBigger</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The boolean value for saying which of the two arrays is largest. </p>
+
+</div>
+</div>
+<a id="aeaa178b29e92fda897893f9dacdb63b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa178b29e92fda897893f9dacdb63b8">&#9670;&nbsp;</a></span>small</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long LargestArrayResult::small</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The length of the smallest array. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/<a class="el" href="_big_int_utils_8h_source.html">BigIntUtils.h</a></li>
 </ul>

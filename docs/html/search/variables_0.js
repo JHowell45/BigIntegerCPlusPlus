@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utilfuncts',['utilFuncts',['../_big_integer_8cpp.html#a7397ede99a45be9ab531200d4efa7706',1,'BigInteger.cpp']]]
+  ['big',['big',['../struct_largest_array_result.html#a52ebc79f13532cb9db38b8dbf650f0f6',1,'LargestArrayResult']]]
 ];

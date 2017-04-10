@@ -66,16 +66,59 @@ $(function() {
 <div class="title">AddResult Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class holds all of the methods for executing the long addition.  
+ <a href="struct_add_result.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_long_addition_8h_source.html">LongAddition.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae66aa315e5c177a4d85abe034b59cc58"><td class="memItemLeft" align="right" valign="top"><a id="ae66aa315e5c177a4d85abe034b59cc58"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>result</b></td></tr>
+<tr class="memitem:ae66aa315e5c177a4d85abe034b59cc58"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_add_result.html#ae66aa315e5c177a4d85abe034b59cc58">result</a></td></tr>
+<tr class="memdesc:ae66aa315e5c177a4d85abe034b59cc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">This value holds the single digit result from adding the two values.  <a href="#ae66aa315e5c177a4d85abe034b59cc58">More...</a><br /></td></tr>
 <tr class="separator:ae66aa315e5c177a4d85abe034b59cc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d99d9daaebd0528d158e86441fd189"><td class="memItemLeft" align="right" valign="top"><a id="a06d99d9daaebd0528d158e86441fd189"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>carryValue</b></td></tr>
+<tr class="memitem:a06d99d9daaebd0528d158e86441fd189"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_add_result.html#a06d99d9daaebd0528d158e86441fd189">carryValue</a></td></tr>
+<tr class="memdesc:a06d99d9daaebd0528d158e86441fd189"><td class="mdescLeft">&#160;</td><td class="mdescRight">This value holds the remainder if applicable.  <a href="#a06d99d9daaebd0528d158e86441fd189">More...</a><br /></td></tr>
 <tr class="separator:a06d99d9daaebd0528d158e86441fd189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class holds all of the methods for executing the long addition. </p>
+<h1><a class="anchor" id="DESCRIPTION"></a>
+DESCRIPTION</h1>
+<p>This class contains all of the methods neededfor checking and adding two integer values together. This class takes two integers provided by another class and runs a form of long division. This means that if the value ends up being two digits or increasing by greater than the value of 10, it adds 1 to the remainder value A struct. This struct is used for storing the result returned by adding the first and second value and also the remainder. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a06d99d9daaebd0528d158e86441fd189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d99d9daaebd0528d158e86441fd189">&#9670;&nbsp;</a></span>carryValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AddResult::carryValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This value holds the remainder if applicable. </p>
+
+</div>
+</div>
+<a id="ae66aa315e5c177a4d85abe034b59cc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66aa315e5c177a4d85abe034b59cc58">&#9670;&nbsp;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AddResult::result</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This value holds the single digit result from adding the two values. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/<a class="el" href="_long_addition_8h_source.html">LongAddition.h</a></li>
 </ul>

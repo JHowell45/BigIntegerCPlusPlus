@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "abdglmps~",
-  1: "abl",
-  2: "b",
-  3: "abdgmps~",
+  0: "abcdgilmprs~",
+  1: "abls",
+  2: "abdgmps~",
+  3: "bcdirs",
   4: "b"
 };
 
@@ -11,8 +11,8 @@ var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions",
+  2: "functions",
+  3: "variables",
   4: "pages"
 };
 
@@ -20,8 +20,8 @@ var indexSectionLabels =
 {
   0: "All",
   1: "Classes",
-  2: "Files",
-  3: "Functions",
+  2: "Functions",
+  3: "Variables",
   4: "Pages"
 };
 
