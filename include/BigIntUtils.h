@@ -1,3 +1,7 @@
+/**
+*
+*
+*/
 #ifndef BIGINTUTILS_H
 #define BIGINTUTILS_H
 
@@ -10,9 +14,14 @@ struct LargestArrayResult {
   bool isFirstValBigger;
 };
 
+struct AddTwoValuesResult {
+  int* array;
+};
+
 class BigIntUtils {
   public :
   LargestArrayResult getLargestArray(BigInteger firstVal, BigInteger secondVal);
+  int* addTwoValues(int* firstNum, int* secondNum, LargestArrayResult result);
 };
 
 #endif

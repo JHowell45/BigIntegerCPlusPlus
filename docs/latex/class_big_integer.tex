@@ -1,0 +1,205 @@
+\section{Big\+Integer Class Reference}
+\label{class_big_integer}\index{Big\+Integer@{Big\+Integer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Big\+Integer} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\textbf{ $\sim$\+Big\+Integer} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \end{DoxyCompactList}\item 
+void \textbf{ set\+Value} (string int\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the value of the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. \end{DoxyCompactList}\item 
+unsigned long \textbf{ get\+Length} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the length of the number held by the variable. \end{DoxyCompactList}\item 
+int $\ast$ \textbf{ get\+Value} ()
+\begin{DoxyCompactList}\small\item\em This method is used to retrieve the current value stored in the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. \end{DoxyCompactList}\item 
+void \textbf{ print\+Value} ()
+\begin{DoxyCompactList}\small\item\em This method is used for printing thr value of the \doxyref{Big\+Integer}{p.}{class_big_integer} value. \end{DoxyCompactList}\item 
+void \textbf{ add} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
+\begin{DoxyCompactList}\small\item\em This method is used to add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. \end{DoxyCompactList}\item 
+\textbf{ Big\+Integer} \textbf{ subtract} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
+\begin{DoxyCompactList}\small\item\em This method is used to subtract one \doxyref{Big\+Integer}{p.}{class_big_integer} value from another. \end{DoxyCompactList}\item 
+\mbox{\label{class_big_integer_a2e99c5a21088f4a0d92ff8180dc1e701}} 
+\textbf{ Big\+Integer} {\bfseries multiply} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
+\item 
+\mbox{\label{class_big_integer_afad44b4bb4b9ae80c33a4be04c00a118}} 
+\textbf{ Big\+Integer} {\bfseries divide} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_big_integer_a67a108dbe651911a21b3fc4310a505dd}} 
+\index{Big\+Integer@{Big\+Integer}!Big\+Integer@{Big\+Integer}}
+\index{Big\+Integer@{Big\+Integer}!Big\+Integer@{Big\+Integer}}
+\subsubsection{Big\+Integer()}
+{\footnotesize\ttfamily Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+Constructor for creating a \doxyref{Big\+Integer}{p.}{class_big_integer}. \mbox{\label{class_big_integer_a987e3a4e9c4405404719be08caaa3146}} 
+\index{Big\+Integer@{Big\+Integer}!````~Big\+Integer@{$\sim$\+Big\+Integer}}
+\index{````~Big\+Integer@{$\sim$\+Big\+Integer}!Big\+Integer@{Big\+Integer}}
+\subsubsection{$\sim$\+Big\+Integer()}
+{\footnotesize\ttfamily Big\+Integer\+::$\sim$\+Big\+Integer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+A destructor. 
+
+Removes the constructor when the program ends. 
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_big_integer_a02fe8d89a8d0f5796d77e852ea49e8ae}} 
+\index{Big\+Integer@{Big\+Integer}!add@{add}}
+\index{add@{add}!Big\+Integer@{Big\+Integer}}
+\subsubsection{add()}
+{\footnotesize\ttfamily void Big\+Integer\+::add (\begin{DoxyParamCaption}\item[{\textbf{ Big\+Integer}}]{first\+Val,  }\item[{\textbf{ Big\+Integer}}]{second\+Val }\end{DoxyParamCaption})}
+
+
+
+This method is used to add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Val} & is the first \doxyref{Big\+Integer}{p.}{class_big_integer} value to be added. \\
+\hline
+{\em second\+Val} & is the second \doxyref{Big\+Integer}{p.}{class_big_integer} value to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\doxyref{Big\+Integer()}{p.}{class_big_integer_a67a108dbe651911a21b3fc4310a505dd} 
+
+\doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
+
+\doxyref{set\+Value(string int\+Value)}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133}
+\end{DoxySeeAlso}
+The result is then assigned to the \doxyref{Big\+Integer}{p.}{class_big_integer} value it is appended to. It adds the two values using a form of long division adding individual digits one at a time, starting from the end of both arrays, and carrying over a 1 if the result exceeds 10. It then stores this in a new array to be stored in a \doxyref{Big\+Integer}{p.}{class_big_integer} variable.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger firstVal.setValue(\textcolor{stringliteral}{"20"}); \textcolor{comment}{// Create variable and assign it the value 20.}
+BigInteger secondValue.setValue(\textcolor{stringliteral}{"15"}); \textcolor{comment}{// Create variable and assign it the value 15.}
+
+BigInteger result.add(firstVal,secondValue); \textcolor{comment}{// Add both values and append the answer, 35, the BigInteger
+       result.}
+\end{DoxyCode}
+ \mbox{\label{class_big_integer_ab1f0e41f6cba177600f6965f4a0b5329}} 
+\index{Big\+Integer@{Big\+Integer}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!Big\+Integer@{Big\+Integer}}
+\subsubsection{get\+Length()}
+{\footnotesize\ttfamily unsigned long Big\+Integer\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the length of the number held by the variable. 
+
+\begin{DoxyReturn}{Returns}
+The length of the number. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\doxyref{Big\+Integer()}{p.}{class_big_integer_a67a108dbe651911a21b3fc4310a505dd} 
+
+\doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
+
+\doxyref{set\+Value()}{p.}{class_big_integer_aaf261f212247b3206108902c039a8133}
+\end{DoxySeeAlso}
+This method is used for retrieving the length of the number in the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. This method is mainly used by other methods, however, was kept public so the user can use and access it.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger test.getLength(); \textcolor{comment}{// Will return the length of the array stored in the variable test.}
+\end{DoxyCode}
+ \mbox{\label{class_big_integer_adcf3fa048a5fe4c9828475e1eace1031}} 
+\index{Big\+Integer@{Big\+Integer}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Big\+Integer@{Big\+Integer}}
+\subsubsection{get\+Value()}
+{\footnotesize\ttfamily int $\ast$ Big\+Integer\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to retrieve the current value stored in the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. 
+
+\begin{DoxyReturn}{Returns}
+The pointer to the start of the array containing the number.
+\end{DoxyReturn}
+The numbers stored in the \doxyref{Big\+Integer}{p.}{class_big_integer} type are stored as an array. This means in order to access their results we access them by using a pointer to the start of the array.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger test.getValue(); \textcolor{comment}{// Returns a pointer to the start of the array holding the value of the
+       BigInteger variable test.}
+\end{DoxyCode}
+ \mbox{\label{class_big_integer_a97b276cd2141c659e76843e93ce85429}} 
+\index{Big\+Integer@{Big\+Integer}!print\+Value@{print\+Value}}
+\index{print\+Value@{print\+Value}!Big\+Integer@{Big\+Integer}}
+\subsubsection{print\+Value()}
+{\footnotesize\ttfamily void Big\+Integer\+::print\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used for printing thr value of the \doxyref{Big\+Integer}{p.}{class_big_integer} value. 
+
+As the values are stored as arrays, this method iterates through, printing each number in sequence.
+
+example of use\+: 
+\begin{DoxyCode}
+BigInteger test.printValue(); \textcolor{comment}{// Prints the value of test correctly.}
+\end{DoxyCode}
+ \mbox{\label{class_big_integer_aaf261f212247b3206108902c039a8133}} 
+\index{Big\+Integer@{Big\+Integer}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!Big\+Integer@{Big\+Integer}}
+\subsubsection{set\+Value()}
+{\footnotesize\ttfamily void Big\+Integer\+::set\+Value (\begin{DoxyParamCaption}\item[{string}]{int\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets the value of the \doxyref{Big\+Integer}{p.}{class_big_integer} variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\+Value} & is the String representation of the number the user wants added to the variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\doxyref{Big\+Integer()}{p.}{class_big_integer_a67a108dbe651911a21b3fc4310a505dd} 
+
+\doxyref{$\sim$\+Big\+Integer()}{p.}{class_big_integer_a987e3a4e9c4405404719be08caaa3146} 
+
+\doxyref{get\+Value()}{p.}{class_big_integer_adcf3fa048a5fe4c9828475e1eace1031} 
+
+\doxyref{print\+Value()}{p.}{class_big_integer_a97b276cd2141c659e76843e93ce85429}
+\end{DoxySeeAlso}
+This sets the current \doxyref{Big\+Integer}{p.}{class_big_integer} variable to be the numerical Type of the String number entered by the user. Although this method does not return any values it does assign the value to a the \doxyref{Big\+Integer}{p.}{class_big_integer} value when appended.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger test.setValue(\textcolor{stringliteral}{"143654543242"}); \textcolor{comment}{// Assigns the number 143654543242 to the variable test}
+\end{DoxyCode}
+ \mbox{\label{class_big_integer_a4f4091a0760e9ec3b05de77769b6fda1}} 
+\index{Big\+Integer@{Big\+Integer}!subtract@{subtract}}
+\index{subtract@{subtract}!Big\+Integer@{Big\+Integer}}
+\subsubsection{subtract()}
+{\footnotesize\ttfamily \textbf{ Big\+Integer} Big\+Integer\+::subtract (\begin{DoxyParamCaption}\item[{\textbf{ Big\+Integer}}]{first\+Val,  }\item[{\textbf{ Big\+Integer}}]{second\+Val }\end{DoxyParamCaption})}
+
+
+
+This method is used to subtract one \doxyref{Big\+Integer}{p.}{class_big_integer} value from another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Val} & [description] \\
+\hline
+{\em second\+Val} & [description] \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+[description] 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\textbf{ Big\+Integer.\+h}\item 
+src/\+Big\+Int\+Components/Big\+Integer.\+cpp\end{DoxyCompactItemize}

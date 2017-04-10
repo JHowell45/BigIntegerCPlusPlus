@@ -7,8 +7,10 @@ include_directories("${PROJECT_SOURCE_DIR}/include/")
 
 add_library(BigIntegerLibrary ${PROJECT_SOURCE_DIR}/src/BigIntComponents/BigInteger.cpp
                               ${PROJECT_SOURCE_DIR}/src/BigIntComponents/LongAddition.cpp
-                            ${PROJECT_SOURCE_DIR}/src/BigIntComponents/BigIntUtils.cpp)
+                              ${PROJECT_SOURCE_DIR}/src/BigIntComponents/BigIntUtils.cpp)
 
-add_executable(test1 ${PROJECT_SOURCE_DIR}/src/TestBigInt/test.cpp)
+add_executable(test1 ${PROJECT_SOURCE_DIR}/src/TestBigInt/test1.cpp)
+add_executable(test2 ${PROJECT_SOURCE_DIR}/src/TestBigInt/test2.cpp)
 
 target_link_libraries(test1 BigIntegerLibrary)
+target_link_libraries(test2 BigIntegerLibrary)
