@@ -13,7 +13,8 @@
 
 /**
  * A struct.
- * This is used for storing the vlaues of which array is the longest and the difference between two
+ *
+ * This is used for storing the values of which array is the longest and the difference between two
  * arrays. It also has a boolean value for saying which of the two arrays is longer.
  */
 struct LargestArrayResult {
@@ -55,7 +56,7 @@ class BigIntUtils {
   LargestArrayResult getLargestArray(BigInteger firstVal, BigInteger secondVal);
 
   /**
-   * This method is used to correctly add two BigInteger values.
+   * This method is used to add two BigInteger values.
    *
    * @param  firstNum is the first BigInteger variable to be added.
    * @param  secondNum is the second BigInteger variable to be added.
@@ -69,27 +70,25 @@ class BigIntUtils {
    * This method is used to iterate through all of the values in both arrays and add them. It
    * starts from the end of both arrays and adds them a digit at a time. It then carries over any
    * additional value and adds that to the next addition. It does this until there are no more
-   * numbers to add and returns this value. This mthod is used by the Program and isn't used by
+   * numbers to add and returns this value. This method is used by the Program and isn't used by
    * the user.
    */
   int* addTwoValues(int* firstNum, int* secondNum, LargestArrayResult result);
 
   /**
-   * [subTwoValues description]
-   * @method subTwoValues
-   * @param  firstNum
-   * @param  secondNum
-   * @param  result
+   * This method is used to subtract one BigInteger variable from another.
+   *
+   * @param  firstNum is the host BigInteger variable to have another value subtracted from it.
+   * @param  secondNum is the BigInteger variable that is subtracted from the host variable.
+   * @param  result is the result of the longest array as well as the shortest, the difference
+   *                between them, and which of the two is longest.
    * @return
    *
    *
-   *
-   *
-   *
-   * Example of use:
-   * @code
-   *
-   * @endcode
+   * This method is used to correctly subtract the secondNum from the firstNum. It iterates through
+   * both arrays subtracting the individual digits one at a time until they have reached the end of
+   * both arrays. It then returns the value to a BigInteger result. This program is used by the
+   * program and not by the user.
    */
   int* subTwoValues(int* firstNum, int* secondNum, LargestArrayResult result);
 };

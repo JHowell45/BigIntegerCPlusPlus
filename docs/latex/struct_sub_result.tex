@@ -1,5 +1,14 @@
 \section{Sub\+Result Struct Reference}
 \label{struct_sub_result}\index{Sub\+Result@{Sub\+Result}}
+
+
+This class holds all of the methods for executing the long subtraction.  
+
+
+
+
+{\ttfamily \#include $<$Long\+Subtraction.\+h$>$}
+
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -10,6 +19,12 @@ int {\bfseries result}
 int {\bfseries carry\+Over\+Value}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+This class holds all of the methods for executing the long subtraction. 
+
+\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{namespacestd_DESCRIPTION}
+This class contains all of the methods needed for checking and subtracting one \doxyref{Big\+Integer}{p.}{class_big_integer} value from another. It does so using a form of long subtraction. Essentially it iterates through the array in reverse order, going from the last digit to the first, subtracting one value at a time. If the combined value of subtracting the digits exceeds a two digit result, only the last digit of the result is returned and the other numbers are added to the following calculation as a carry over value. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

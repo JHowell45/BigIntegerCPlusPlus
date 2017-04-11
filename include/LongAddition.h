@@ -2,10 +2,10 @@
  * This class holds all of the methods for executing the long addition.
  *
  * @section DESCRIPTION
- * This class contains all of the methods neededfor checking and adding two integer values together.
- * This class takes two integers provided by another class and runs a form of long division. This
- * means that if the value ends up being two digits or increasing by greater than the value of 10,
- * it adds 1 to the remainder value
+ * This class contains all of the methods needed for checking and adding two integer values
+ * together. This class takes two integers provided by another class and runs a form of long
+ * division. This means that if the value ends up being two digits or increasing by greater than
+ * the value of 10, it adds 1 to the remainder value.
  */
 #ifndef LONGADDITION_H
 #define LONGADDITION_H

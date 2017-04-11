@@ -73,10 +73,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6f355ec25a51cf1f480966d6d0780ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is used for getting the larger of the two arrays and returning the values discussed in the struct <a class="el" href="struct_largest_array_result.html" title="This class holds all of the utility methods used by the BigInteger file. ">LargestArrayResult</a>.  <a href="#a6f355ec25a51cf1f480966d6d0780ea4">More...</a><br /></td></tr>
 <tr class="separator:a6f355ec25a51cf1f480966d6d0780ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a593ae84f25f4472e9dba017969dc2d24"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_big_int_utils.html#a593ae84f25f4472e9dba017969dc2d24">addTwoValues</a> (int *firstNum, int *secondNum, <a class="el" href="struct_largest_array_result.html">LargestArrayResult</a> result)</td></tr>
-<tr class="memdesc:a593ae84f25f4472e9dba017969dc2d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is used to correctly add two <a class="el" href="class_big_integer.html">BigInteger</a> values.  <a href="#a593ae84f25f4472e9dba017969dc2d24">More...</a><br /></td></tr>
+<tr class="memdesc:a593ae84f25f4472e9dba017969dc2d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is used to add two <a class="el" href="class_big_integer.html">BigInteger</a> values.  <a href="#a593ae84f25f4472e9dba017969dc2d24">More...</a><br /></td></tr>
 <tr class="separator:a593ae84f25f4472e9dba017969dc2d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e7832da59466f499da43cf84378510"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_big_int_utils.html#a03e7832da59466f499da43cf84378510">subTwoValues</a> (int *firstNum, int *secondNum, <a class="el" href="struct_largest_array_result.html">LargestArrayResult</a> result)</td></tr>
-<tr class="memdesc:a03e7832da59466f499da43cf84378510"><td class="mdescLeft">&#160;</td><td class="mdescRight">[subTwoValues description]  subTwoValues  <a href="#a03e7832da59466f499da43cf84378510">More...</a><br /></td></tr>
+<tr class="memdesc:a03e7832da59466f499da43cf84378510"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is used to subtract one <a class="el" href="class_big_integer.html">BigInteger</a> variable from another.  <a href="#a03e7832da59466f499da43cf84378510">More...</a><br /></td></tr>
 <tr class="separator:a03e7832da59466f499da43cf84378510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -112,7 +112,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method is used to correctly add two <a class="el" href="class_big_integer.html">BigInteger</a> values. </p>
+<p>This method is used to add two <a class="el" href="class_big_integer.html">BigInteger</a> values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">firstNum</td><td>is the first <a class="el" href="class_big_integer.html">BigInteger</a> variable to be added. </td></tr>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_largest_array_result.html" title="This class holds all of the utility methods used by the BigInteger file. ">LargestArrayResult</a> </dd>
 <dd>
 <a class="el" href="class_big_int_utils.html#a6f355ec25a51cf1f480966d6d0780ea4" title="This method is used for getting the larger of the two arrays and returning the values discussed in th...">getLargestArray(BigInteger firstVal, BigInteger secondVal)</a></dd></dl>
-<p>This method is used to iterate through all of the values in both arrays and add them. It starts from the end of both arrays and adds them a digit at a time. It then carries over any additional value and adds that to the next addition. It does this until there are no more numbers to add and returns this value. This mthod is used by the Program and isn't used by the user. </p>
+<p>This method is used to iterate through all of the values in both arrays and add them. It starts from the end of both arrays and adds them a digit at a time. It then carries over any additional value and adds that to the next addition. It does this until there are no more numbers to add and returns this value. This method is used by the Program and isn't used by the user. </p>
 
 </div>
 </div>
@@ -201,17 +201,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[subTwoValues description]  subTwoValues </p>
+<p>This method is used to subtract one <a class="el" href="class_big_integer.html">BigInteger</a> variable from another. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">firstNum</td><td></td></tr>
-    <tr><td class="paramname">secondNum</td><td></td></tr>
-    <tr><td class="paramname">result</td><td></td></tr>
+    <tr><td class="paramname">firstNum</td><td>is the host <a class="el" href="class_big_integer.html">BigInteger</a> variable to have another value subtracted from it. </td></tr>
+    <tr><td class="paramname">secondNum</td><td>is the <a class="el" href="class_big_integer.html">BigInteger</a> variable that is subtracted from the host variable. </td></tr>
+    <tr><td class="paramname">result</td><td>is the result of the longest array as well as the shortest, the difference between them, and which of the two is longest. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<p>Example of use: </p><div class="fragment"></div><!-- fragment --> 
+<p>This method is used to correctly subtract the secondNum from the firstNum. It iterates through both arrays subtracting the individual digits one at a time until they have reached the end of both arrays. It then returns the value to a <a class="el" href="class_big_integer.html">BigInteger</a> result. This program is used by the program and not by the user. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

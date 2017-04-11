@@ -6,9 +6,9 @@
 \textbf{ Largest\+Array\+Result} \textbf{ get\+Largest\+Array} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
 \begin{DoxyCompactList}\small\item\em This method is used for getting the larger of the two arrays and returning the values discussed in the struct \doxyref{Largest\+Array\+Result}{p.}{struct_largest_array_result}. \end{DoxyCompactList}\item 
 int $\ast$ \textbf{ add\+Two\+Values} (int $\ast$first\+Num, int $\ast$second\+Num, \textbf{ Largest\+Array\+Result} result)
-\begin{DoxyCompactList}\small\item\em This method is used to correctly add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This method is used to add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. \end{DoxyCompactList}\item 
 int $\ast$ \textbf{ sub\+Two\+Values} (int $\ast$first\+Num, int $\ast$second\+Num, \textbf{ Largest\+Array\+Result} result)
-\begin{DoxyCompactList}\small\item\em [sub\+Two\+Values description]  sub\+Two\+Values \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method is used to subtract one \doxyref{Big\+Integer}{p.}{class_big_integer} variable from another. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
@@ -20,7 +20,7 @@ int $\ast$ \textbf{ sub\+Two\+Values} (int $\ast$first\+Num, int $\ast$second\+N
 
 
 
-This method is used to correctly add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. 
+This method is used to add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -39,7 +39,7 @@ is the answer to be stored in a \doxyref{Big\+Integer}{p.}{class_big_integer} re
 
 \doxyref{get\+Largest\+Array(\+Big\+Integer first\+Val, Big\+Integer second\+Val)}{p.}{class_big_int_utils_a6f355ec25a51cf1f480966d6d0780ea4}
 \end{DoxySeeAlso}
-This method is used to iterate through all of the values in both arrays and add them. It starts from the end of both arrays and adds them a digit at a time. It then carries over any additional value and adds that to the next addition. It does this until there are no more numbers to add and returns this value. This mthod is used by the Program and isn\textquotesingle{}t used by the user. \mbox{\label{class_big_int_utils_a6f355ec25a51cf1f480966d6d0780ea4}} 
+This method is used to iterate through all of the values in both arrays and add them. It starts from the end of both arrays and adds them a digit at a time. It then carries over any additional value and adds that to the next addition. It does this until there are no more numbers to add and returns this value. This method is used by the Program and isn\textquotesingle{}t used by the user. \mbox{\label{class_big_int_utils_a6f355ec25a51cf1f480966d6d0780ea4}} 
 \index{Big\+Int\+Utils@{Big\+Int\+Utils}!get\+Largest\+Array@{get\+Largest\+Array}}
 \index{get\+Largest\+Array@{get\+Largest\+Array}!Big\+Int\+Utils@{Big\+Int\+Utils}}
 \subsubsection{get\+Largest\+Array()}
@@ -80,24 +80,21 @@ LargestArrayResult result = getLargestArray(arrayTwo,arrayTwo); \textcolor{comme
 
 
 
-[sub\+Two\+Values description]  sub\+Two\+Values 
+This method is used to subtract one \doxyref{Big\+Integer}{p.}{class_big_integer} variable from another. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em first\+Num} & \\
+{\em first\+Num} & is the host \doxyref{Big\+Integer}{p.}{class_big_integer} variable to have another value subtracted from it. \\
 \hline
-{\em second\+Num} & \\
+{\em second\+Num} & is the \doxyref{Big\+Integer}{p.}{class_big_integer} variable that is subtracted from the host variable. \\
 \hline
-{\em result} & \\
+{\em result} & is the result of the longest array as well as the shortest, the difference between them, and which of the two is longest. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-Example of use\+: 
-\begin{DoxyCode}
-\end{DoxyCode}
- 
+This method is used to correctly subtract the second\+Num from the first\+Num. It iterates through both arrays subtracting the individual digits one at a time until they have reached the end of both arrays. It then returns the value to a \doxyref{Big\+Integer}{p.}{class_big_integer} result. This program is used by the program and not by the user. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
