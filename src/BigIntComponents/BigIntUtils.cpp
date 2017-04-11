@@ -45,11 +45,11 @@ int* BigIntUtils :: addTwoValues(int* firstNum, int* secondNum, LargestArrayResu
       resultArray[counter] = addResult.result;
     } else {
       if(result.isFirstValBigger) {
-        currentVal = firstNum[largeIndex];
+        addResult = addFuncts.addIndexValue(firstNum[largeIndex],0,addResult.carryValue);
       } else {
-        currentVal = secondNum[largeIndex];
+        addResult = addFuncts.addIndexValue(secondNum[largeIndex],0,addResult.carryValue);
       }
-      resultArray[counter] = currentVal;
+      resultArray[counter] = addResult.result;
     }
   }
   return resultArray;
@@ -63,4 +63,6 @@ int* subTwoValues(int* firstNum, int* secondNum, LargestArrayResult result) {
   int* resultArray = new int[largestArray];
   int currentVal;
   AddResult addResult = {0,0};
+
+  return NULL;
 }
