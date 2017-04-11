@@ -4,7 +4,7 @@
 \begin{DoxyCompactItemize}
 \item 
 \textbf{ Add\+Result} \textbf{ add\+Index\+Value} (int first\+Val, int second\+Val, int carry\+Over\+Value)
-\begin{DoxyCompactList}\small\item\em [add\+Index\+Value description] \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method adds two values and returns the result and a remainder. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
@@ -16,7 +16,7 @@
 
 
 
-[add\+Index\+Value description] 
+This method adds two values and returns the result and a remainder. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -30,8 +30,11 @@
 \begin{DoxyReturn}{Returns}
 the result for adding the numbers and the remainder.
 \end{DoxyReturn}
+This method adds two single digit numbers together. If the answer ends up being greater than a single digit the answer is only the last digit and the remainder is incremented by the rest of the other numbers.
+
 Example of use\+: 
 \begin{DoxyCode}
+AddResult result = addIndexValue(firstVal[index],secondVal[index],carryOverValue);
 \end{DoxyCode}
  
 

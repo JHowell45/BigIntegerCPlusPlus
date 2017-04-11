@@ -6,7 +6,7 @@
 \textbf{ Largest\+Array\+Result} \textbf{ get\+Largest\+Array} (\textbf{ Big\+Integer} first\+Val, \textbf{ Big\+Integer} second\+Val)
 \begin{DoxyCompactList}\small\item\em This method is used for getting the larger of the two arrays and returning the values discussed in the struct \doxyref{Largest\+Array\+Result}{p.}{struct_largest_array_result}. \end{DoxyCompactList}\item 
 int $\ast$ \textbf{ add\+Two\+Values} (int $\ast$first\+Num, int $\ast$second\+Num, \textbf{ Largest\+Array\+Result} result)
-\begin{DoxyCompactList}\small\item\em [add\+Two\+Values description]  add\+Two\+Values \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This method is used to correctly add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. \end{DoxyCompactList}\item 
 int $\ast$ \textbf{ sub\+Two\+Values} (int $\ast$first\+Num, int $\ast$second\+Num, \textbf{ Largest\+Array\+Result} result)
 \begin{DoxyCompactList}\small\item\em [sub\+Two\+Values description]  sub\+Two\+Values \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -20,21 +20,26 @@ int $\ast$ \textbf{ sub\+Two\+Values} (int $\ast$first\+Num, int $\ast$second\+N
 
 
 
-[add\+Two\+Values description]  add\+Two\+Values 
+This method is used to correctly add two \doxyref{Big\+Integer}{p.}{class_big_integer} values. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em first\+Num} & [description] \\
+{\em first\+Num} & is the first \doxyref{Big\+Integer}{p.}{class_big_integer} variable to be added. \\
 \hline
-{\em second\+Num} & [description] \\
+{\em second\+Num} & is the second \doxyref{Big\+Integer}{p.}{class_big_integer} variable to be added. \\
 \hline
-{\em result} & [description] \\
+{\em result} & is the variable storing the lengths of the array as well as the difference in size and which of the two arrays is larger. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-[description] 
+is the answer to be stored in a \doxyref{Big\+Integer}{p.}{class_big_integer} result variable. 
 \end{DoxyReturn}
-\mbox{\label{class_big_int_utils_a6f355ec25a51cf1f480966d6d0780ea4}} 
+\begin{DoxySeeAlso}{See also}
+\doxyref{Largest\+Array\+Result}{p.}{struct_largest_array_result} 
+
+\doxyref{get\+Largest\+Array(\+Big\+Integer first\+Val, Big\+Integer second\+Val)}{p.}{class_big_int_utils_a6f355ec25a51cf1f480966d6d0780ea4}
+\end{DoxySeeAlso}
+This method is used to iterate through all of the values in both arrays and add them. It starts from the end of both arrays and adds them a digit at a time. It then carries over any additional value and adds that to the next addition. It does this until there are no more numbers to add and returns this value. This mthod is used by the Program and isn\textquotesingle{}t used by the user. \mbox{\label{class_big_int_utils_a6f355ec25a51cf1f480966d6d0780ea4}} 
 \index{Big\+Int\+Utils@{Big\+Int\+Utils}!get\+Largest\+Array@{get\+Largest\+Array}}
 \index{get\+Largest\+Array@{get\+Largest\+Array}!Big\+Int\+Utils@{Big\+Int\+Utils}}
 \subsubsection{get\+Largest\+Array()}
@@ -46,15 +51,28 @@ This method is used for getting the larger of the two arrays and returning the v
 
 get\+Largest\+Array 
 \begin{DoxyParams}{Parameters}
-{\em first\+Val} & [description] \\
+{\em first\+Val} & is the first array. \\
 \hline
-{\em second\+Val} & [description] \\
+{\em second\+Val} & is the second array. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-[description] 
+a struct containing the length of the largest and smallest array, the difference as well as a boolean value saying which array is longer. 
 \end{DoxyReturn}
-\mbox{\label{class_big_int_utils_a03e7832da59466f499da43cf84378510}} 
+\begin{DoxySeeAlso}{See also}
+\doxyref{Largest\+Array\+Result}{p.}{struct_largest_array_result}
+\end{DoxySeeAlso}
+This method is used for getting the length of the largest array ad returning it. It also makes a not of the length of the other array as well as the difference. This data is used for when using any of the operator fuctions as they make use of the array length. Having both lengths is neccessary as both arrays may be different lengths. Having the boolean value also helps to distinguish which array is longer too.
+
+Example of use\+: 
+\begin{DoxyCode}
+BigInteger arrayOne.setValue(23434324); \textcolor{comment}{// Sets the value of the first BigInteger variable to 23434324.}
+BigInteger arrayTwo.setValue(2434); \textcolor{comment}{// Sets the value of the second BigInteger variable to 2434.}
+
+LargestArrayResult result = getLargestArray(arrayTwo,arrayTwo); \textcolor{comment}{// Returns the length of the arrays and
+       which of the arrays is larger.}
+\end{DoxyCode}
+ \mbox{\label{class_big_int_utils_a03e7832da59466f499da43cf84378510}} 
 \index{Big\+Int\+Utils@{Big\+Int\+Utils}!sub\+Two\+Values@{sub\+Two\+Values}}
 \index{sub\+Two\+Values@{sub\+Two\+Values}!Big\+Int\+Utils@{Big\+Int\+Utils}}
 \subsubsection{sub\+Two\+Values()}
@@ -66,17 +84,20 @@ get\+Largest\+Array
 
 
 \begin{DoxyParams}{Parameters}
-{\em first\+Num} & [description] \\
+{\em first\+Num} & \\
 \hline
-{\em second\+Num} & [description] \\
+{\em second\+Num} & \\
 \hline
-{\em result} & [description] \\
+{\em result} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-[description] 
-\end{DoxyReturn}
 
+\end{DoxyReturn}
+Example of use\+: 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

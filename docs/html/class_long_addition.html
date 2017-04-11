@@ -70,7 +70,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e7e20f55fea668ef9981616a699ffe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_add_result.html">AddResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_long_addition.html#a2e7e20f55fea668ef9981616a699ffe5">addIndexValue</a> (int firstVal, int secondVal, int carryOverValue)</td></tr>
-<tr class="memdesc:a2e7e20f55fea668ef9981616a699ffe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">[addIndexValue description]  <a href="#a2e7e20f55fea668ef9981616a699ffe5">More...</a><br /></td></tr>
+<tr class="memdesc:a2e7e20f55fea668ef9981616a699ffe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method adds two values and returns the result and a remainder.  <a href="#a2e7e20f55fea668ef9981616a699ffe5">More...</a><br /></td></tr>
 <tr class="separator:a2e7e20f55fea668ef9981616a699ffe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>[addIndexValue description] </p>
+<p>This method adds two values and returns the result and a remainder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">firstVal</td><td>is the first integer to be added. </td></tr>
@@ -116,7 +116,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result for adding the numbers and the remainder.</dd></dl>
-<p>Example of use: </p><div class="fragment"></div><!-- fragment --> 
+<p>This method adds two single digit numbers together. If the answer ends up being greater than a single digit the answer is only the last digit and the remainder is incremented by the rest of the other numbers.</p>
+<p>Example of use: </p><div class="fragment"><div class="line"><a class="code" href="struct_add_result.html">AddResult</a> result = <a class="code" href="class_long_addition.html#a2e7e20f55fea668ef9981616a699ffe5">addIndexValue</a>(firstVal[index],secondVal[index],carryOverValue);</div></div><!-- fragment --> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
